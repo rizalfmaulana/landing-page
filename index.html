@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Product landing Page</title>
+  </head>
+  <body id="home">
+    <div class="container" id="header">
+      <nav class="menu" id="nav-bar">
+        <div class="menu-toggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="brand">
+          <h1>Bond Street Shop</h1>
+        </div>
+        <ul class="menu-list">
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#services">Service</a></li>
+          <li><a class="nav-link" href="#gallery">Gallery</a></li>
+        </ul>
+      </nav>
+
+      <!-- header -->
+      <div class="header">
+        <div class="hero">
+          <img src="https://source.unsplash.com/random/201x201" alt="aa" id="header-img" />
+          <h2>Bond Street Merch</h2>
+          <p>Shoes & Headset</p>
+        </div>
+        <div class="features feature-1">
+          <h4>$200</h4>
+          <p>Shoes</p>
+        </div>
+        <div class="features feature-2">
+          <h4>$100</h4>
+          <p>Headset</p>
+        </div>
+      </div>
+      <!-- sevices -->
+      <section class="services" id="services">
+        <div class="service">
+          <div class="icon">👕</div>
+          <h3>Merch</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, distinctio!</p>
+        </div>
+        <div class="service">
+          <div class="icon">💻</div>
+          <h3>Web Design</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, distinctio!</p>
+        </div>
+        <div class="service">
+          <div class="icon">📸</div>
+          <h3>photographer</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, distinctio!</p>
+        </div>
+        <div class="service">
+          <div class="icon">🎥</div>
+          <h3>videographer</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, distinctio!</p>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section class="gallery" id="gallery">
+        <h2>Gallery</h2>
+        <img src="https://source.unsplash.com/random/201x201" alt="gambar" />
+        <img src="https://source.unsplash.com/random/202x202" alt="gambar" />
+        <img src="https://source.unsplash.com/random/203x203" alt="gambar" />
+        <img src="https://source.unsplash.com/random/204x204" alt="gambar" />
+        <img src="https://source.unsplash.com/random/205x205" alt="gambar" />
+        <img src="https://source.unsplash.com/random/206x206" alt="gambar" />
+        <img src="https://source.unsplash.com/random/207x207" alt="gambar" />
+        <img src="https://source.unsplash.com/random/208x208" alt="gambar" />
+        <img src="https://source.unsplash.com/random/207x207" alt="gambar" />
+        <img src="https://source.unsplash.com/random/209x209" alt="gambar" />
+      </section>
+
+      <!-- Contact -->
+      <section class="contact">
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+          <input type="email" id="email" placeholder="Enter your Email" name="email" />
+          <input type="submit" id="submit" />
+        </form>
+      </section>
+
+      <!-- Video -->
+      <section class="video">
+        <iframe
+          id="video"
+          width="853"
+          height="480"
+          src="https://www.youtube.com/embed/WA4dDs0T7sM"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe
+        >"
+      </section>
+    </div>
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const nav = document.querySelector("nav ul");
+      const span = document.querySelector("menu-toggle span");
+
+      menuToggle.addEventListener("click", function () {
+        nav.classList.toggle("slide");
+        span.forEach((s) => {
+          s.classList.toggle("slide");
+        });
+      });
+    </script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
